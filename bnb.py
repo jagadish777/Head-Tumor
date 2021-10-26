@@ -27,6 +27,7 @@ classifier = BernoulliNB()
 classifier.fit(training_inputs, training_outputs)
 predictions = classifier.predict(testing_inputs)
 accuracy = 100.0 * accuracy_score(testing_outputs, predictions)
+print(accuracy)
 """""
 print ("The accuracy of BNB Classifier on testing data is: " + str(accuracy))
 testSet = [[1,0,0,0,0,1,0,0,0,1]]
