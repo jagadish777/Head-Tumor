@@ -23,23 +23,28 @@ hsymp5 = StringVar()
 """""
 
 head_sym_label=Label(m,text='No Pain(0) or Pain(1)?').pack()
-p = 0
+p = IntVar()
+Radiobutton(m, text = '0', variable = p, value=0).pack()
 Radiobutton(m, text = '1', variable = p, value=1).pack()
 
 head_sym_label=Label(m,text='No Vomittings(0) or Vomittings(1)?').pack()
-v = 0
+v = IntVar()
+Radiobutton(m, text = '0', variable = v, value=0).pack()
 Radiobutton(m, text = '1', variable = v, value=1).pack()
 
 head_sym_label=Label(m,text='Short Pain(0) or Long Pain(1)?').pack()
-lp = 0
+lp = IntVar()
+Radiobutton(m, text = '0', variable = lp, value=0).pack()
 Radiobutton(m, text = '1', variable = lp, value=1).pack()
 
 head_sym_label=Label(m,text='Normal skin(0) or Yellow skin(1)?').pack()
-ys = 0
+ys = IntVar()
+Radiobutton(m, text = '0', variable = ys, value=0).pack()
 Radiobutton(m, text = '1', variable = ys, value=1).pack()
 
 head_sym_label=Label(m,text='Normal Eyes(0) or Yellow Eyes(1)?').pack()
-ye = 0
+ye = IntVar()
+Radiobutton(m, text = '0', variable = ye, value=0).pack()
 Radiobutton(m, text = '1', variable = ye, value=1).pack()
 
 """""
@@ -59,23 +64,28 @@ osymp5 = StringVar()
 """""""""
 
 other_sym_label=Label(m,text='Digestion(0) or Indigestion(1)?').pack()
-id = 0
+id = IntVar()
+Radiobutton(m, text = '0', variable = id, value=0).pack()
 Radiobutton(m, text = '1', variable = id, value=1).pack()
 
 other_sym_label=Label(m,text='Normal Apetite(0) or Low Apetite(1)?').pack()
-la = 0
+la = IntVar()
+Radiobutton(m, text = '0', variable = la, value=0).pack()
 Radiobutton(m, text = '1', variable = la, value=1).pack()
 
 other_sym_label=Label(m,text='No Fever(0) or Fever(1)?').pack()
-f = 0
+f = IntVar()
+Radiobutton(m, text = '0', variable = f, value=0).pack()
 Radiobutton(m, text = '1', variable = f, value=1).pack()
 
 other_sym_label=Label(m,text='No Chills(0) or Chills(1)?').pack()
-c = 0
+c = IntVar()
+Radiobutton(m, text = '0', variable = c, value=0).pack()
 Radiobutton(m, text = '1', variable = c, value=1).pack()
 
 other_sym_label=Label(m,text='No Weight Loss(0) or Weight Loss(1)?').pack()
-wl = 0
+wl = IntVar()
+Radiobutton(m, text = '0', variable = wl, value=0).pack()
 Radiobutton(m, text = '1', variable = wl, value=1).pack()
 
 """""
