@@ -15,58 +15,57 @@ def stacking_prediction():
     print(z)
 
 
-
-
-head_sym_label=Label(m,text='No Pain(0) or Pain(1)?').pack()
+Label(m,text='Input Head Tumor Symptons').pack()
+head_sym_label=Label(m,text='No Pain or Pain?').pack()
 p_s = IntVar()
-Radiobutton(m, text = '0', variable = p_s, value=0).pack()
-Radiobutton(m, text = '1', variable = p_s, value=1).pack()
+Radiobutton(m, text = 'no', variable = p_s, value=0).pack()
+Radiobutton(m, text = 'yes', variable = p_s, value=1).pack()
 
-head_sym_label=Label(m,text='No Vomittings(0) or Vomittings(1)?').pack()
+head_sym_label=Label(m,text='No Vomittings or Vomittings?').pack()
 v_s = IntVar()
-Radiobutton(m, text = '0', variable = v_s, value=0).pack()
-Radiobutton(m, text = '1', variable = v_s, value=1).pack()
+Radiobutton(m, text = 'no', variable = v_s, value=0).pack()
+Radiobutton(m, text = 'yes', variable = v_s, value=1).pack()
 
-head_sym_label=Label(m,text='Short Pain(0) or Long Pain(1)?').pack()
+head_sym_label=Label(m,text='Short Pain or Long Pain?').pack()
 lp_s = IntVar()
-Radiobutton(m, text = '0', variable = lp_s, value=0).pack()
-Radiobutton(m, text = '1', variable = lp_s, value=1).pack()
+Radiobutton(m, text = 'no', variable = lp_s, value=0).pack()
+Radiobutton(m, text = 'yes', variable = lp_s, value=1).pack()
 
-head_sym_label=Label(m,text='Normal skin(0) or Yellow skin(1)?').pack()
+head_sym_label=Label(m,text='Normal skin or Yellow skin?').pack()
 ys_s = IntVar()
-Radiobutton(m, text = '0', variable = ys_s, value=0).pack()
-Radiobutton(m, text = '1', variable = ys_s, value=1).pack()
+Radiobutton(m, text = 'no', variable = ys_s, value=0).pack()
+Radiobutton(m, text = 'yes', variable = ys_s, value=1).pack()
 
-head_sym_label=Label(m,text='Normal Eyes(0) or Yellow Eyes(1)?').pack()
+head_sym_label=Label(m,text='Normal Eyes or Yellow Eyes?').pack()
 ye_s = IntVar()
-Radiobutton(m, text = '0', variable = ye_s, value=0).pack()
-Radiobutton(m, text = '1', variable = ye_s, value=1).pack()
+Radiobutton(m, text = 'no', variable = ye_s, value=0).pack()
+Radiobutton(m, text = 'yes', variable = ye_s, value=1).pack()
 
-
-other_sym_label=Label(m,text='Digestion(0) or Indigestion(1)?').pack()
+Label(m,text='Input Other Symptons').pack()
+other_sym_label=Label(m,text='Digestion or Indigestion?').pack()
 id_s = IntVar()
-Radiobutton(m, text = '0', variable = id_s, value=0).pack()
-Radiobutton(m, text = '1', variable = id_s, value=1).pack()
+Radiobutton(m, text = 'no', variable = id_s, value=0).pack()
+Radiobutton(m, text = 'yes', variable = id_s, value=1).pack()
 
-other_sym_label=Label(m,text='Normal Apetite(0) or Low Apetite(1)?').pack()
+other_sym_label=Label(m,text='Normal Apetite or Low Apetite?').pack()
 la_s = IntVar()
-Radiobutton(m, text = '0', variable = la_s, value=0).pack()
-Radiobutton(m, text = '1', variable = la_s, value=1).pack()
+Radiobutton(m, text = 'no', variable = la_s, value=0).pack()
+Radiobutton(m, text = 'yes', variable = la_s, value=1).pack()
 
-other_sym_label=Label(m,text='No Fever(0) or Fever(1)?').pack()
+other_sym_label=Label(m,text='No Fever or Fever?').pack()
 f_s = IntVar()
-Radiobutton(m, text = '0', variable = f_s, value=0).pack()
-Radiobutton(m, text = '1', variable = f_s, value=1).pack()
+Radiobutton(m, text = 'no', variable = f_s, value=0).pack()
+Radiobutton(m, text = 'yes', variable = f_s, value=1).pack()
 
-other_sym_label=Label(m,text='No Chills(0) or Chills(1)?').pack()
+other_sym_label=Label(m,text='No Chills or Chills?').pack()
 c_s = IntVar()
-Radiobutton(m, text = '0', variable = c_s, value=0).pack()
-Radiobutton(m, text = '1', variable = c_s, value=1).pack()
+Radiobutton(m, text = 'no', variable = c_s, value=0).pack()
+Radiobutton(m, text = 'yes', variable = c_s, value=1).pack()
 
-other_sym_label=Label(m,text='No Weight Loss(0) or Weight Loss(1)?').pack()
+other_sym_label=Label(m,text='No Weight Loss or Weight Loss?').pack()
 wl_s = IntVar()
-Radiobutton(m, text = '0', variable = wl_s, value=0).pack()
-Radiobutton(m, text = '1', variable = wl_s, value=1).pack()
+Radiobutton(m, text = 'no', variable = wl_s, value=0).pack()
+Radiobutton(m, text = 'yes', variable = wl_s, value=1).pack()
 
 #stores values
 def st_vs():
